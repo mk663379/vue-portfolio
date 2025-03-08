@@ -10,6 +10,13 @@ export default defineConfig({
     vue(),
     vueDevTools(),
   ],
+  server: {
+    host: true,
+    port: 5173,
+    cors: {
+      origin: ['http://127.0.0.1:5173', 'http://127.0.0.1:5173/__devtools__/']
+    }
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
