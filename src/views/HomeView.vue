@@ -1,5 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TheWrapper from '@/components/TheWrapper.vue'
+</script>
 
 <template>
-  <div></div>
+  <TheWrapper></TheWrapper>
 </template>
