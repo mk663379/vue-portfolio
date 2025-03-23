@@ -8,11 +8,8 @@
   "customizations": {
     "vscode": {
       "settings": {
-        "[css][html][javascript][typescript][vue]": {
+        "[css][html][javascript][typescript][vue][json][jsonc]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "[json][jsonc]": {
-          "editor.defaultFormatter": "vscode.css-language-features"
         },
         "github.copilot-chat.anable": true
       },

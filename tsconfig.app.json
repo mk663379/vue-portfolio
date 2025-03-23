@@ -7,6 +7,9 @@
 
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"]
   }
 }

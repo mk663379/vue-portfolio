@@ -14,7 +14,7 @@ const drawer = defineModel<boolean>({ default: true })
         </v-avatar>
       </v-sheet>
 
-      <v-divider></v-divider>
+      <v-divider class="mx-4"></v-divider>
 
       <TheNavigation />
     </v-navigation-drawer>
