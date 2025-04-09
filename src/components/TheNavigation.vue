@@ -11,7 +11,10 @@ watch(opened, (newValue) => {
   }
 })
 
-const plugins: Navigation[] = [{ title: 'VueDatePicker', to: '/plugins/dates' }]
+const plugins: Navigation[] = [
+  { title: 'VueDatePicker', to: '/plugins/dates' },
+  { title: 'VueDraggable', to: '/plugins/draggable' },
+]
 </script>
 
 <template>

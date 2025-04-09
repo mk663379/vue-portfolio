@@ -1,0 +1,8 @@
+/* plugin vuedraggable */
+.draggable-ghost {
+  opacity: 0;
+}
+
+.draggable-handle {
+  cursor: grab;
+}

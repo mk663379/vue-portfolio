@@ -11,6 +11,10 @@ const router = createRouter({
       path: '/plugins/dates',
       component: () => import('@/views/plugins/VueDatePicker.vue'),
     },
+    {
+      path: '/plugins/draggable',
+      component: () => import('@/views/plugins/VueDraggable.vue'),
+    },
   ],
 })
 
