@@ -8,6 +8,10 @@ const router = createRouter({
       component: () => import('@/views/HomeView.vue'),
     },
     {
+      path: '/features/sample-modals',
+      component: () => import('@/views/features/SampleModals.vue'),
+    },
+    {
       path: '/plugins/dates',
       component: () => import('@/views/plugins/VueDatePicker.vue'),
     },

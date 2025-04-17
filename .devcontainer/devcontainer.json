@@ -10,8 +10,7 @@
       "settings": {
         "[css][html][javascript][typescript][vue][json][jsonc]": {
           "editor.defaultFormatter": "esbenp.prettier-vscode"
-        },
-        "github.copilot-chat.anable": true
+        }
       },
       "extensions": [
         "Vue.volar",
@@ -21,9 +20,7 @@
         "EditorConfig.EditorConfig",
         "esbenp.prettier-vscode",
         "eamodio.gitlens",
-        "ms-azuretools.vscode-docker",
-        "GitHub.copilot",
-        "GitHub.copilot-chat"
+        "ms-azuretools.vscode-docker"
       ]
     }
   }

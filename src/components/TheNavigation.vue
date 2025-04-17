@@ -11,6 +11,8 @@ watch(opened, (newValue) => {
   }
 })
 
+const features: Navigation[] = [{ title: 'Modals', to: '/features/sample-modals' }]
+
 const plugins: Navigation[] = [
   { title: 'VueDatePicker', to: '/plugins/dates' },
   { title: 'VueDraggable', to: '/plugins/draggable' },
@@ -25,6 +27,14 @@ const plugins: Navigation[] = [
       <template v-slot:activator="{ props }">
         <v-list-item v-bind="props" title="Vue" prepend-icon="mdi-vuejs"></v-list-item>
       </template>
+
+      <v-list-item
+        v-for="(feature, i) in features"
+        :key="i"
+        :title="feature.title"
+        :value="feature.title"
+        :to="feature.to"
+      ></v-list-item>
     </v-list-group>
 
     <v-list-group value="Plugins">
