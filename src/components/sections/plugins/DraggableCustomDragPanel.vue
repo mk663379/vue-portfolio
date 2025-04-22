@@ -2,14 +2,14 @@
 import { onMounted, ref } from 'vue'
 import draggableComponent from 'vuedraggable'
 
-import { makeFakeUsers } from '@/helpers/fakeHelpers'
+import { generateFakes } from '@/helpers/fakeHelpers'
 
 import type { FakeUser } from '@/types/fakes'
 
 const users = ref<FakeUser[]>([])
 
 onMounted(() => {
-  users.value = makeFakeUsers(5)
+  users.value = generateFakes('user', 5)
 })
 </script>
 

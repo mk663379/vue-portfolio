@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { ROUTES } from '@/constants'
 import { watch } from 'vue'
 
 import type { Navigation } from '@/types/navigation'
@@ -11,11 +12,11 @@ watch(opened, (newValue) => {
   }
 })
 
-const features: Navigation[] = [{ title: 'Modals', to: '/features/sample-modals' }]
+const features: Navigation[] = [{ title: 'Modals', to: ROUTES.features.sampleModals }]
 
 const plugins: Navigation[] = [
-  { title: 'VueDatePicker', to: '/plugins/dates' },
-  { title: 'VueDraggable', to: '/plugins/draggable' },
+  { title: 'VueDatePicker', to: ROUTES.plugins.dates },
+  { title: 'VueDraggable', to: ROUTES.plugins.draggable },
 ]
 </script>
 

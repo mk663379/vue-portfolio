@@ -1,3 +1,4 @@
+import { ROUTES } from '@/constants'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -8,15 +9,15 @@ const router = createRouter({
       component: () => import('@/views/HomeView.vue'),
     },
     {
-      path: '/features/sample-modals',
+      path: ROUTES.features.sampleModals,
       component: () => import('@/views/features/SampleModals.vue'),
     },
     {
-      path: '/plugins/dates',
+      path: ROUTES.plugins.dates,
       component: () => import('@/views/plugins/VueDatePicker.vue'),
     },
     {
-      path: '/plugins/draggable',
+      path: ROUTES.plugins.draggable,
       component: () => import('@/views/plugins/VueDraggable.vue'),
     },
   ],

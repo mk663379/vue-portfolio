@@ -2,7 +2,7 @@
 import { onMounted, ref } from 'vue'
 import draggableComponent from 'vuedraggable'
 
-import { makeFakeUsers } from '@/helpers/fakeHelpers'
+import { generateFakes } from '@/helpers/fakeHelpers'
 
 import type { FakeUser } from '@/types/fakes'
 
@@ -11,9 +11,9 @@ const users2 = ref<FakeUser[]>([])
 const users3 = ref<FakeUser[]>([])
 
 onMounted(() => {
-  users1.value = makeFakeUsers(5)
-  users2.value = makeFakeUsers(5)
-  users3.value = makeFakeUsers(5)
+  users1.value = generateFakes('user', 5)
+  users2.value = generateFakes('user', 5)
+  users3.value = generateFakes('user', 5)
 })
 </script>
 
